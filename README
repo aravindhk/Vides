@@ -1,0 +1,15 @@
+To install, as root simply type
+./install.sh
+
+or equivalently 
+
+sudo ./install.sh
+
+To uninstall, go to the src directory 
+and type (as root)
+
+make uninstall
+
+or 
+
+sudo make uninstall

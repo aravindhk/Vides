@@ -1,0 +1,17 @@
+#ifndef COSTANTI_H
+#define hbar 1.05459e-34
+#define m0 9.1095e-31
+#define q 1.60219e-19
+#define pi 3.141592653589793115997963468544185161590576171875
+#define eps0 8.85e-12
+#define kboltz 1.3807e-23
+#define negf2 2
+#define spinup 1
+#define spindown -1
+#define rb 0.529e-10
+#define ry 13.6058
+#define Nav 6.02214179e23
+#define weight 12.0107e-3
+#define speed 299792458
+#define rho 7.6*(1e-7)
+#endif
