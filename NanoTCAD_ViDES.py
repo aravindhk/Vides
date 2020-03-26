@@ -2351,7 +2351,7 @@ class interface1D:
         return;
 
 
-def dope_reservoir(grid, interface, channel, molar_fraction, bbox):
+def dope_reservoir(grid, interface, channel, molar_fraction, bbox): #bbox is the bounding box of the reservoir
     name = grid.__class__.__name__;
     if (name == "grid3D"):
         xmin = bbox[0];

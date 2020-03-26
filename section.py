@@ -48,7 +48,7 @@ def section(slicedir, quantity, coordslice, grid):
         fp.write("set mouse \n")
         fp.write("splot 'newplot' w l \n")
         fp.flush()
-        eval(input("waiting ...... Press any key to continue"))
+        raw_input("waiting ...... Press Enter to continue...")
         fp.close()
     elif (slicedir == "y"):
         # I find the index of the closest 
@@ -73,7 +73,7 @@ def section(slicedir, quantity, coordslice, grid):
         fp.write("set mouse \n")
         fp.write("splot 'newplot' w l \n")
         fp.flush()
-        eval(input("waiting ...... Press any key to continue"))
+        raw_input("waiting ...... Press Enter to continue...")
         fp.close()
     elif (slicedir == "z"):
         # I find the index of the closest 

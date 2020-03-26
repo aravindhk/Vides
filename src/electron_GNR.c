@@ -313,12 +313,13 @@ static PyObject* py_electron_GNR(PyObject* self, PyObject* args)
     {
       printf("minimum Nmin and maximum Nmax index of the kx range used for the computation of the scattering rates\n");
       printf("Nmin=%d, Nmax=%d, kxmin/kF=%lg, kxmax/kF=%lg\n",Nmin,Nmax,kx[Nmin]/kF,kx[Nmax]/kF);
-      printf("total number of kx points to be computed= %lg\n",Nmax-Nmin);
+      printf("total number of kx points to be computed= %d\n",Nmax-Nmin);
     }
 
-
+  printf("mmin\n");
   temp_obj=PyInt_AsLong(mmin);
   PyObject_SetAttrString(obj,"mmin",temp_obj);
+  printf("mmin\n");
 
   temp_obj=PyInt_AsLong(mmax);
   PyObject_SetAttrString(obj,"mmax",temp_obj);

@@ -49,7 +49,7 @@ static PyObject* py_nonuniformgridmod(PyObject* self, PyObject* args)
   
   import_array();
 
-  if (!PyArg_ParseTuple(args,"O",&meshdelta))
+  if (!PyArg_ParseTuple(args,"O",&meshdelta)) //Check if args is an object, unpacks the tuple and passes to meshdelta
     {
       printf("NOT AN ARRAY! \n");
       exit(0);
