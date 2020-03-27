@@ -316,12 +316,10 @@ static PyObject* py_electron_GNR(PyObject* self, PyObject* args)
       printf("total number of kx points to be computed= %d\n",Nmax-Nmin);
     }
 
-  printf("mmin\n");
-  temp_obj=PyInt_AsLong(mmin);
+  temp_obj=PyInt_FromLong(mmin);
   PyObject_SetAttrString(obj,"mmin",temp_obj);
-  printf("mmin\n");
 
-  temp_obj=PyInt_AsLong(mmax);
+  temp_obj=PyInt_FromLong(mmax);
   PyObject_SetAttrString(obj,"mmax",temp_obj);
 
   temp_obj=PyFloat_FromDouble(kxmin);  /* double case */
