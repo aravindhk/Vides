@@ -1183,7 +1183,7 @@ static PyObject* py_phonon_GNR(PyObject* self, PyObject* args)
 
 
   // I set the attribute of the class to send data out
-
+/* Passing back to python caller*/
   temp_obj=  PyArray_FromDimsAndData(1,dimkx,PyArray_DOUBLE,(char*)(&kx[0]));
   PyObject_SetAttrString(obj,"qx",temp_obj);
   

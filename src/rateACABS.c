@@ -965,6 +965,7 @@ static PyObject* py_rateACABS(PyObject* self, PyObject* args)
 
   fclose(fp);
 
+/* passing back to python caller */
   temp_obj=  PyArray_FromDimsAndData(2,dimrate,PyArray_DOUBLE,(char*)(&rate[0][0]));
   PyObject_SetAttrString(obj,"rateAA",temp_obj);
 
